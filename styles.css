@@ -1,0 +1,261 @@
+/* Media query for mobile view */
+@media screen and (max-width: 375px) {
+    body {
+        background-color: hsl(30, 38%, 92%); /* Change to the desired background color for mobile view */
+      	display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+     .border-div {
+        width: 90%;
+        margin-bottom: 10px;
+        height: 590px;
+        position: relative;
+        background-color: white;
+      	border-radius: 10px;
+      	overflow: hidden; /* Hide overflow content */
+    }
+
+        .image-container {
+        width: 100%;
+        height: 40%; /* Adjust the height of the image */
+        background-image: url('image-product-mobile.jpg'); /* Use the correct image for mobile view */
+        background-size: cover; /* Cover the entire area */
+        background-position: top; /* Align the image to the top */
+    }
+		
+		.text-container {
+   		 width: 50%; /* Take up half of .border-div width */
+   		 height: 100%; /* Take up full height of .border-div */
+    	 float: left; /* Float left to position it to the right */
+	     padding: 20px; /* Add padding for space around the text */
+	     box-sizing: border-box; /* Include padding in the width calculation */
+	     font-family: 'Montserrat', sans-serif; /* Use Montserrat font family */
+	     font-weight: 500; /* Adjust font weight */
+	     color: hsl(228, 12%, 48%); /* Set the text color */
+	     font-size: 14px;
+    }
+    
+    	.text-container1 {
+    	width: 250%; /* Take up half of .border-div width */
+   	    height: 50%; /* Take up full height of .border-div */
+ 	    padding: 0px; /* Add padding for space around the text */
+	    box-sizing: border-box; /* Include padding in the width calculation */
+	    font-family: 'Fraunces', sans-serif; /* Use Montserrat font family */
+	    font-weight: 700; /* Adjust font weight */
+ 	    color: hsl(212, 21%, 14%); /* Set the text color */
+	    font-size: 30px;
+    }
+    
+   	    .text-container2 {
+	    width: 95%; /* Take up half of .border-div width */
+	    height: 50%; /* Take up full height of .border-div */
+	    padding: 4px; /* Add padding for space around the text */
+	    box-sizing: border-box; /* Include padding in the width calculation */
+	    font-family: 'Montserrat', sans-serif; /* Use Montserrat font family */
+	    font-weight: 500; /* Adjust font weight */
+	    color: hsl(228, 12%, 48%); /* Set the text color */
+	    font-size: 14px;
+	}
+	
+		.container {
+		display: flex;
+		column-gap: 1px;
+	}
+		.text-container3 {
+	    width: 100%; /* Take up half of .border-div width */
+	    height: 50%; /* Take up full height of .border-div */
+		margin: 5px, 5px;
+	    padding: 0px; /* Add padding for space around the text */
+	    box-sizing: border-box; /* Include padding in the width calculation */
+	    font-family: 'Fraunces', sans-serif; /* Use Montserrat font family */
+	    font-weight: 700; /* Adjust font weight */
+	    color: hsl(118, 38%, 44%); /* Set the text color */
+	    font-size: 25px;
+	}
+		.text-container4 {
+	    width: 150%; /* Take up half of .border-div width */
+	    height: 90%; /* Take up full height of .border-div */
+	    margin: 6px;
+	    padding: 1px; /* Add padding for space around the text */
+	    box-sizing: border-box; /* Include padding in the width calculation */
+	    font-family: 'Montserrat', sans-serif; /* Use Montserrat font family */
+	    font-weight: 500; /* Adjust font weight */
+	    color: hsl(228, 12%, 48%); /* Set the text color */
+	    font-size: 14px;
+	    text-decoration: line-through; /* Add strikethrough */
+	}
+	
+		.button-container {
+	    position: absolute;
+	    width: 265px;
+	    height: 20px;
+	    bottom: 22px;
+	    right: 22px;
+	    padding: 10px;
+	    border: 2px solid green;
+	    border-radius: 10px;
+	    cursor: pointer;
+	    text-align: center;
+	    font-family: 'Montserrat', sans-serif;
+	    font-weight: 500;
+	    color: white;
+	    background-color: hsl(158, 36%, 37%);
+	    background-image: url("data:image/svg+xml,%3Csvg width='15' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z' fill='white'/%3E%3C/svg%3E");
+	    background-size: 14px;
+	    background-position: 92px center;
+	    background-repeat: no-repeat;
+	    transition: background-color 0.3s ease; /* Add hover effect */
+	}
+
+		.button-container:hover {
+	    background-color: hsl(157, 38%, 23%);
+	    color: white;
+	    background-image: url("data:image/svg+xml,%3Csvg width='15' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z' fill='white'/%3E%3C/svg%3E");
+	}
+
+		
+    
+}
+
+/* Media query for desktop view */
+@media screen and (min-width: 1440px) {
+
+
+body {
+    background-color: hsl(30, 38%, 92%); /* Cream color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Make sure the body takes the full viewport height */
+    margin: 0; /* Remove default body margin */
+    min-width: 1000px; /* Set your desired minimum width */
+}
+
+.border-div {
+   	  width: 600px;
+      margin: 10px; /* Adjust the margins */
+      height: 425px;
+      background-color: white;
+      border-radius: 10px;
+      
+      position: relative; /* Enable positioning for the image */
+
+    /* Add image to the left */
+    background-image: url('image-product-desktop.jpg'); /* Replace 'your-image.jpg' with your image file path */
+    background-size: 50% 100%; /* Make the image half the width of .border-div */
+    background-position: left center; /* Position the image to the left */
+    background-repeat: no-repeat; /* Do not repeat the image */
+      
+}
+
+.image-container {
+    width: 50%; /* Take up half of .border-div width */
+    height: 100%; /* Take up full height of .border-div */
+    float: left; /* Float left to position it to the left */
+}
+
+.text-container {
+    width: 50%; /* Take up half of .border-div width */
+    height: 100%; /* Take up full height of .border-div */
+    float: left; /* Float left to position it to the right */
+    padding: 20px; /* Add padding for space around the text */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font family */
+    font-weight: 500; /* Adjust font weight */
+    color: hsl(228, 12%, 48%); /* Set the text color */
+    font-size: 14px;
+}
+
+.text-container1 {
+    width: 70%; /* Take up half of .border-div width */
+    height: 100%; /* Take up full height of .border-div */
+    
+    padding: 0px; /* Add padding for space around the text */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    font-family: 'Fraunces', sans-serif; /* Use Montserrat font family */
+    font-weight: 700; /* Adjust font weight */
+    color: hsl(212, 21%, 14%); /* Set the text color */
+    font-size: 30px;
+}
+
+.text-container2 {
+    width: 125%; /* Take up half of .border-div width */
+    height: 100%; /* Take up full height of .border-div */
+    
+    padding: 4px; /* Add padding for space around the text */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font family */
+    font-weight: 500; /* Adjust font weight */
+    color: hsl(228, 12%, 48%); /* Set the text color */
+    font-size: 14px;
+}
+
+.container {
+	display: flex;
+	column-gap: 13px;
+}
+
+.text-container3 {
+    width: 100%; /* Take up half of .border-div width */
+    height: 50%; /* Take up full height of .border-div */
+	margin: 5px, 5px;
+    padding: 0px; /* Add padding for space around the text */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    font-family: 'Fraunces', sans-serif; /* Use Montserrat font family */
+    font-weight: 700; /* Adjust font weight */
+    color: hsl(118, 38%, 44%); /* Set the text color */
+    font-size: 25px;
+}
+
+.text-container4 {
+    width: 120%; /* Take up half of .border-div width */
+    height: 90%; /* Take up full height of .border-div */
+    margin: 6px;
+    padding: 1px; /* Add padding for space around the text */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font family */
+    font-weight: 500; /* Adjust font weight */
+    color: hsl(228, 12%, 48%); /* Set the text color */
+    font-size: 14px;
+    text-decoration: line-through; /* Add strikethrough */
+}
+
+
+.button-container {
+    position: absolute;
+    width: 210px;
+    height: 20px;
+    bottom: 35px;
+    right: 40px;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z' fill='white'/%3E%3C/svg%3E");
+    background-size: 14px;
+    background-position: 63px center;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease; /* Add hover effect */
+}
+
+.button-container:hover {
+    background-color: hsl(157, 38%, 23%);
+    color: white;
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z' fill='white'/%3E%3C/svg%3E");
+}
+
+.underline-blue {
+    text-decoration: underline;
+    color: blue;
+}
+
+
